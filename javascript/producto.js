@@ -21,6 +21,11 @@ function cambiarTamano(){
         navbar.style.display = 'none';
     }
 }
+function abrirWhatsapp(){
+  let win= window.open("https://api.whatsapp.com/send?phone=528712500956&text=Hola%2C%20me%20interesa%20el%20bloqueador%20solar%20de%20nopal%20%C2%BFSigue%20disponible%3F", '_blank');
+  win.focus
+
+}
 window.addEventListener('resize', cambiarTamano);
 
 cambiarTamano();

@@ -103,8 +103,123 @@
   text-align: center;
   color: #b9b6b6;
 }
+/*Estilo de la pantalla de venta*/
+article {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.articleContainer {
+  width: 86%;
+  margin: 2em 7% 2em 7%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ebebeb;
+  border-radius: 3em;
+}
+.imgProduct {
+  width: 50%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 3em 0em 0 3em;
+}
+.infoContainer{
+  margin: 1% 2.5%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.articleName{
+  font-family: Raleway;
+  font-size: 5.8em;
+}
+.articleInfo{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.7em;
+}
+.Price{
+  margin-left: 5%;
+  font-weight: 700;
+  font-size: 2.9em;
+  font-family: Raleway;
+  color:#4b786a;
+}
+.contactanos{
+  width: 100%;
+  max-height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7fca89;
+  border-radius: 3.2em;
+  border: none;
+}
+.contactanos:hover{
+  background-color: #4b786a;
+}
+.contactanos>img{
+  height: 80%;
+  width: auto;
+}
+.contactanos>p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: #fff;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7fca89;
+  color: white;
+  width: 100%;
+}
+.listTitle{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.7em;
+  list-style: none;
+}
+.Logotipo>a>img{
+  margin-right: 10px;
+  height: 1.3em;
+}
+.Logotipo>a{
+  color: #fff;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+}
+.Logotipo>img{
+  margin-right: 10px;
+  height: 1.4em;
+}
+.Logotipo{
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.3em;
+  list-style: none;
+}
+
 /*adaptación de tamaño*/
-@media (max-width: 1099px) { /*
+@media (max-width: 1441px) {
+    .contactanos>p{
+      font-size: 1.8em;
+    }
+}
+@media (max-width: 1235px) {
+  .articleName{
+    font-size: 5.3em;
+  }
+  .articleInfo{
+    font-size: 1.5em;
+  }
+  .contactanos>p{
+    font-size: 1.3em;
+  }
+  /*
   .titleSection {
     text-align: center;
     font-size: 5.1em;
@@ -114,8 +229,39 @@
     font-size: 1.7em;
   }*/
 }
+@media (max-width: 1005px) {
+  .articleName{
+    font-size: 4.8em;
+  }
+  .articleInfo{
+    font-size: 1.1em;
+  }
+  .contactanos>p{
+    font-size: 1.2em;
+  }
+  
+}
 /*Adaptación a tableta*/
 @media (max-width: 874px) {
+  .articleContainer{
+    flex-direction: column;
+  }
+  .imgProduct{
+    width: 100%;
+    border-radius: 3em 3em 0em 0em;
+  }
+  .infoContainer{
+    width: 95%;
+    padding-bottom: 2%;
+  }
+  .contactanos{
+    width: 100%;
+    max-height: 7%;
+    height: 7vh;
+  }
+  .contactanos>img{
+    height: 80%;
+  }
   /*.infoSection {
     margin-left: 5%;
     margin-right: 5%;
@@ -161,11 +307,23 @@
     font-size: 1.5em;
     font-family: Raleway;
   }
-
+  .infoContainer{
+    padding-bottom: 3vh;
+  }
   .Navbar a:hover {
     background: #7fca89;
     color: #fff;
-  } /*
+  } 
+  .articleName{
+    font-size: 4.2em;
+  }
+  .articleInfo{
+    font-size: 0.9em;
+  }
+  .contactanos>p{
+    font-size: 1.1em;
+  }
+  /*
   .titleSection {
     text-align: center;
     font-size: 4em;
@@ -182,12 +340,22 @@
   .principalTitle {
     font-size: 4.8em;
   }
+  .infoContainer{
+    padding-bottom: 4vh;
+  }
   .titleSection {
     text-align: center;
     font-size: 3.2em;
   }
-  .infoContainer p {
-    text-align: center;
-    font-size: 1em;
+  .Price{
+    font-size: 1.6em;
+    margin: 5% 0% 5% 5%;
+  }
+  .articleName{
+    font-size: 3.5em;
+    margin-bottom: 5%;
+  }
+  .contactanos>p{
+    font-size: 0.9em;
   }
 }
